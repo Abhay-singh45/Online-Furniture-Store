@@ -67,14 +67,12 @@ app.post('/signup', (req, res) => {
                 bcrypt.genSalt(10, (err, salt) => {
                     bcrypt.hash(password, salt, (err, hash) => {
                         req.body.password = hash;
-                        req.body.seller = false;
 
                         //set the doc
                         setDoc(doc(users, email), req.body).then(data => {
                             res.json({
                                 name: req.body.name,
                                 email: req.body.email,
-                                seller: req.body.seller,
                             })
                         })
                     })
@@ -106,7 +104,6 @@ app.post('/login', (req, res) => {
                         return res.json({
                             name: data.name,
                             email: data.email,
-                            seller: data.seller
                         })
                     }
                     else {
