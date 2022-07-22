@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Search results</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar dark">
+    </nav>
+
+    <!-- best selling products  -->
+    <section class="search-listing">
+        <h1 class="section-title">Sofas</h1>
+        <div class="product-container">
+            <div class="product-card" id="1" name="sofa-1" onclick=" productID(this.id)">
+                <img src="./img/sofa-1.png" class="product-img">
+                <p class="product-price" price="499">$ 699</p>
+            </div>
+            <div class="product-card" id="2" name="sofa-2" onclick="productID(this.id)">
+                <img src="img/sofa-2.png" class="product-img">
+                <p class="product-price" price="599">$ 599</p>
+            </div>
+            <div class="product-card" id="3" name="sofa-3" onclick="productID(this.id)">
+                <img src="img/sofa-3.png" class="product-img">
+                <p class="product-price" price="699">$ 649</p>
+            </div>
+            <div class="product-card" id="4" name="sofa-4" onclick="productID(this.id)">
+                <img src="img/sofa-4.png" class="product-img">
+                <p class="product-price" price="399">$ 799</p>
+            </div>
+            <div class="product-card" id="5" name="sofa-5" onclick="productID(this.id)">
+                <img src="img/sofa-5.png" alt="" class="product-img">
+                <p class="product-price" price="499">$ 499</p>
+            </div>
+            <div class="product-card" id="6" name="sofa-6" onclick="productID(this.id)">
+                <img src="img/sofa-6.png" alt="" class="product-img">
+                <p class="product-price" price="699">$ 699</p>
+            </div>
+            <div class="product-card" id="7" name="sofa-7" onclick="productID(this.id)">
+                <img src="img/sofa-7.png" alt="" class="product-img">
+                <p class="product-price" price="449">$ 499</p>
+            </div>
+            <div class="product-card" id="8" name="sofa-8" onclick="productID(this.id)">
+                <img src="img/sofa-8.png" alt="" class="product-img">
+                <p class="product-price" price="799">$ 899</p>
+            </div>
+            <div class="product-card" id="9" name="sofa-9" onclick="productID(this.id)">
+                <img src="img/sofa-9.png" alt="" class="product-img">
+                <p class="product-price" price="399">$ 499</p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <h1 class="section-title">Lights</h1>
+        <div class="product-container">
+            <div class="product-card" id="10" name="light-1" onclick="productID(this.id)">
+                <img src="img/light-1.jpeg" alt="" class="product-img">
+                <p class="product-price" price="99">$ 99</p>
+            </div>
+            <div class="product-card" id="11" name="light-2" onclick="productID(this.id)">
+                <img src="img/light-2.jpeg" alt="" class="product-img">
+                <p class="product-price" price="199">$ 199</p>
+            </div>
+            <div class="product-card" id="12" name="light-3" onclick="productID(this.id)">
+                <img src="img/light-3.jpeg" alt="" class="product-img">
+                <p class="product-price" price="249">$ 249</p>
+            </div>
+            <div class="product-card" id="13" name="light-4" onclick="productID(this.id)">
+                <img src="img/light-4.jpeg" alt="" class="product-img">
+                <p class="product-price" price="299">$ 149</p>
+            </div>
+            <div class="product-card" id="14" name="light-5" onclick="productID(this.id)">
+                <img src="img/light-5.webp" alt="" class="product-img">
+                <p class="product-price" price="199">$ 199</p>
+            </div>
+            <div class="product-card" id="15" name="light-6" onclick="productID(this.id)">
+                <img src="img/light-6.webp" alt="" class="product-img">
+                <p class="product-price" price="249">$ 249</p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <h1 class="section-title">Tables</h1>
+        <div class="product-container">
+            <div class="product-card" id="16" name="table-1" onclick="productID(this.id)">
+                <img src="img/table-1.jpg" alt="" class="product-img">
+                <p class="product-price" price="99">$ 199</p>
+            </div>
+            <div class="product-card" id="17" name="table-2" onclick="productID(this.id)">
+                <img src="img/table-2.jpg" alt="" class="product-img">
+                <p class="product-price" price="199">$ 299</p>
+            </div>
+            <div class="product-card" id="18" name="table-3" onclick="productID(this.id)">
+                <img src="img/table-3.jpg" alt="" class="product-img">
+                <p class="product-price" price="249">$ 249</p>
+            </div>
+            <div class="product-card" id="19" name="table-4" onclick="productID(this.id)">
+                <img src="img/table-4.jpg" alt="" class="product-img">
+                <p class="product-price" price="299">$ 399</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/home.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
